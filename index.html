@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	
-	<title>Royal Audio Player</title>
+	<title>Radio Malaysia Online</title>
 	
 	<!--  Import required css and js files  -->
 	<link rel="stylesheet" type="text/css"  href="content/global.css"/>
@@ -42,7 +42,7 @@
 				initializeOnlyWhenVisible:"no",
 				addKeyboardSupport:"yes",
 				useContinuousPlayback:'no',
-				autoPlay:"no",
+				autoPlay:"yes",
 				loop:"no",
 				shuffle:"no",
 				useVectorIcons:"no",
@@ -201,123 +201,18 @@
 	
 	<!-- Playlists -->
 	<ul id="playlists" style="display:none;">
-		<li data-source="playlist1" data-playlist-name="MY HTML PLAYLIST 1"  data-thumbnail-path="content/thumbnails/large1.jpg">
+		<li data-source="playlist1" data-playlist-name="Radio Malaysia"  data-thumbnail-path="content/thumbnails/large1.jpg">
 			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My HTML Playlist 1</span></p>
 			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>HTML</p>
 			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>Created using <strong>HTML markup</strong>, all formats are supported and it can have mixed audio & video.</p>
-		</li>
-		
-		<li data-source="https://www.webdesign-flash.ro/p/rap/podcast/podcast.xml" data-playlist-name="MY PODCAST PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-podcast.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My Podcast Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>PODCAST</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist is created using a podcast URL.</p>
-		</li>
-		
-		<li data-source="https://soundcloud.com/playlist/sets/chance-the-rapper-top-tracks" data-playlist-name="MY SOUNDCLOUD PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-soundcloud.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My SoundCloud Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>SOUNDCLOUD</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist is created using a SoundCloud playlist URL.</p>
-		</li>
-
-		<li data-source="playlistMixed" data-playlist-name="MY MIXED PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-mixed.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My Mixed Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>MIXED</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist contains mixed files like .mp3, .mp4, Youtube, SoundCloud, Shoutcast, HLS etc ...</p>
-		</li>
-
-		<li data-source="https://www.webdesign-flash.ro/p/rap/content/playlist1.xml" data-playlist-name="MY XML PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-xml.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My XML Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>XML</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist is created using a XML file.</p>
-		</li>
-
-		<li data-source="list=PLxKHVMqMZqUQFbRO0VWaHMaWuQagIgpJe" data-playlist-name="MY YOUTUBE PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-youtube.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My Youtube Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>YOUTUBE</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist is created using a Youtube playlist URL.</p>
-		</li>
-
-		<li data-source="mp4Playlist" data-playlist-name="MY VIDEO .mp4 FOLDER PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-folder.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My Video .mp4 Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>VIDEO .mp4 FOLDER</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist contains .mp4 videos and simple HTML markup.</p>
-		</li>
-
-		<li data-source="folder:mp3" data-playlist-name="MY AUDIO .mp3 FOLDER PLAYLIST 1"  data-thumbnail-path="content/thumbnails/p-folder.jpg">
-			<p class="fwdrap-categories-title"><span class="fwdrap-header">Title: </span><span class="fwdrap-title">My Folder Playlist 1</span></p>
-			<p class="fwdrap-categories-type"><span class="fwdrap-header">Type: </span>AUDIO .mp3 FOLDER</p>
-			<p class="fwdrap-categories-description"><span class="fwdrap-header">Description: </span>This playlist is created from a folder with mp3 files.</p>
 		</li>
 
 	</ul>
 
 	<!-- HTML playlist -->
 	<ul id="playlist1" style="display:none;">
-		<li data-path="content/mp3/01.mp3" data-thumbpath="content/thumbnails/small1.jpg" data-duration="06:16">
-			<p><span class="fwdrap-artist">Yellow Claw & Tropkillaz</span><span class="fwdrap-title"> - Assets feat. The Kemist</span></p>
-		</li>
-		<li data-path="content/mp3/02.mp3" data-thumbpath="content/thumbnails/small2.jpg" data-downloadable="yes" data-buy-url="http://webdesign-flash.ro/p/uvp/" data-duration="04:41">
-			<p><span span class="fwdrap-artist">MACKLEMORE & RYAN LEWIS vs MAJOR LAZER</span><span class="fwdrap-title"> - can't hold us remix (ft swappi and 1st klase)</span></p>
-		</li>
-		<li data-path="content/mp3/03.mp3" data-thumbpath="content/thumbnails/small3.jpg" data-downloadable="no" data-duration="03:49">
-			<p><span span class="fwdrap-artist">Crush ft. Camden Cox</span><span class="fwdrap-title"> - Could This Be Real (Luminox Remix)</span></p>
-		</li>
-		<li data-path="content/mp3/04.mp3" data-thumbpath="content/thumbnails/small4.jpg" data-buy-url="buyCustomFunction();" data-duration="04:19">
-			<p><span class="fwdrap-artist">DJ SLiiNK X DiRTY SOUTH JOE</span><span class="fwdrap-title"> - CERTiFiED TRAP TOUR OFFiCiAL MiX</span></p>
-		</li>
-		<li data-path="content/mp3/05.mp3" data-thumbpath="content/thumbnails/small5.jpg" data-use-a-to-b="yes" data-downloadable="no" data-duration="03:54">
-			<p><span class="fwdrap-artist">Knife Party</span><span class="fwdrap-title"> - LRAD (CRNKN FESTIE RMX) - <span class="white" style="font-weight:bold; color:#FFFFFF">A to B loop</span></span></p>
-		</li>
-		<li data-path="content/mp3/06.mp3" data-thumbpath="content/thumbnails/small6.jpg" data-downloadable="no" data-duration="02:01">
-			<p><span class="fwdrap-artist">Sandro Silva & Quintino</span><span class="fwdrap-title"> - Epic (Carnage & Luminox Festival Trap Refix)</span></p>
-		</li>
-		<li data-path="content/mp3/07.mp3" data-thumbpath="content/thumbnails/small7.jpg" data-downloadable="yes" data-play-if-logged-in="yes" data-buy-url="buyCustomFunction();" data-duration="02:33">
-			<p><span class="fwdrap-artist">New World Sound & Thomas Newson</span><span class="fwdrap-title"> - Flute - <span class="white" style="font-weight:bold; color:#FFFFFF">Must be logged in!</span></span></p>
-		</li>
-		<li data-path="content/mp3/08.mp3" data-thumbpath="content/thumbnails/small8.jpg" data-downloadable="yes" data-buy-url="http://webdesign-flash.ro/p/s3dcov/" data-duration="02:41">
-			<p><span class="fwdrap-artist">Sick Individuals & Axwell ft. Taylr Renee</span><span class="fwdrap-title"> - I AM (Jacob Plant Remix)</span></p>
-		</li>
-		<li data-path="content/mp3/09.mp3" data-thumbpath="content/thumbnails/small9.jpg" data-downloadable="no" data-duration="02:36">
-			<p><span class="fwdrap-artist">Morgan Page vs. Deorro</span><span class="fwdrap-title"> - "Carry Yee" (Morgan Page Bootleg Remix)</span></p>
-		</li>
-		<li data-path="content/mp3/10.mp3" data-thumbpath="content/thumbnails/small10.jpg" data-downloadable="no" data-buy-url="buyCustomFunction();" data-duration="03:15">
-			<p><span class="fwdrap-artist">Helicopter Showdown & Kezwik ft. La Meduza</span><span class="fwdrap-title"> - No Return</span></p>
-		</li>
-		<li data-path="content/mp3/11.mp3" data-thumbpath="content/thumbnails/small11.jpg" data-downloadable="no"  data-duration="02:53">
-			<p><span class="fwdrap-artist">Faithless vs. Danny Avila vs. Justice</span><span class="fwdrap-title"> - We Are Poseidon Insomnia (MAKJ Vs. VINAI Edit)</span></p>
-		</li>
-		<li data-path="content/mp3/12.mp3" data-thumbpath="content/thumbnails/small12.jpg" data-downloadable="yes" data-duration="00:35">
-			<p><span class="fwdrap-artist">Headhunterz ft. Krewella</span><span class="fwdrap-title"> - United Kids Of The World (Project 46 Remix)</span></p>
-		</li>
-		<li data-path="content/mp3/13.mp3" data-thumbpath="content/thumbnails/small13.jpg" data-downloadable="yes" data-duration="00:31">
-			<p><span class="fwdrap-artist">SVT116 – Niconé feat. Malonda</span><span class="fwdrap-title"> - Let Love Begin (Acapella)</span></p>
-		</li>
-		<li data-path="content/mp3/14.mp3" data-thumbpath="content/thumbnails/small14.jpg" data-downloadable="yes" data-buy-url="http://webdesign-flash.ro/p/u3dcar/"  data-duration="01:14">
-			<p><span class="fwdrap-artist">Terravita & Casey Desmond</span><span class="fwdrap-title"> - Settle The Score (Case & Point Remix)</span></p>
-		</li>
-		<li data-path="content/mp3/15.mp3" data-thumbpath="content/thumbnails/small15.jpg" data-downloadable="yes" data-duration="03:20">
-			<p><span class="fwdrap-artist">The Prototypes 'Chronicles' Mix</span><span class="fwdrap-title"> - Recorded Exclusively for EDM.COM</span></p>
-		</li>
-		<li data-path="content/mp3/16.mp3" data-thumbpath="content/thumbnails/small16.jpg" data-downloadable="yes" data-duration="00:20">
-			<p><span class="fwdrap-artist">Bass Kleph, Chris Arnott, Tommy Trash</span><span class="fwdrap-title"> - We Feel Love (Daleri Bootleg)</span></p>
-		</li>
-		<li data-path="content/mp3/07.mp3" data-thumbpath="content/thumbnails/small17.jpg" data-downloadable="no" data-duration="02:33">
-			<p><span class="fwdrap-artist">Alina Baraz & Galimatias</span><span class="fwdrap-title"> - Pretty Thoughts</span></p>
-		</li>
-		<li data-path="content/mp3/08.mp3" data-thumbpath="content/thumbnails/small18.jpg" data-downloadable="no" data-duration="02:41">
-			<p><span class="fwdrap-artist">Der Rauber Und Der Prinz</span><span class="fwdrap-title"> - Jagd Auf Den Hirsch (Guti remix) DESOLAT 2010</span></p>
-		</li>
-		<li data-path="content/mp3/09.mp3" data-thumbpath="content/thumbnails/small19.jpg" data-downloadable="no" data-duration="02:36">
-			<p><span class="fwdrap-artist">Great Good Fine Ok</span><span class="fwdrap-title"> - You're The One For Me (option4 remix)</span></p>
-		</li>
-		<li data-path="content/mp3/10.mp3" data-thumbpath="content/thumbnails/small20.jpg" data-downloadable="yes" data-buy-url="buyCustomFunction();" data-duration="03:15" data-is-private="yes">
-			<p><span class="white" style="font-weight:bold;color:#FFFFFF;">Private video</span><span class="fwdrap-title"> - Please enter password to play track, test password is <span class="white" style="font-weight:bold;color:#FFFFFF;">Melinda</span></span></p>
-		</li>
 		<li data-path="https://stream.ram.radio/audio/ram.stream_aac/playlist.m3u8" data-thumbpath="content/thumbnails/small21.jpg" data-downloadable="no" data-duration="00:00">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">HLS live streaming .m3u8</span><span class="fwdrap-title"> - https://stream.ram.radio/audio/ram.stream_aac/playlist.m3u8</span></p>
-		</li>
-		<li data-path="http://144.76.106.52:7000" data-type="shoutcast" data-thumbpath="content/thumbnails/small21.jpg" data-downloadable="no" data-duration="00:00">
-			<p><span class="white" style="font-weight:bold; color:#FFFFFF;">Shoutcast example</span><span class="fwdrap-title"> - http://144.76.106.52:7000</span></p>
 		</li>
 	</ul>		
 	
