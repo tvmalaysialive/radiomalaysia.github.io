@@ -45,177 +45,7 @@
 		}
 	</style>
 	
-	<script type="text/javascript">
-		FWDRAPUtils.onReady(function(){
-			new FWDRAP({
-				//main settings
-				instanceName:"live",
-				parentId:"myDiv",
-				playlistsId:"playlists",
-				mainFolderPath:"content",
-				skinPath:"minimal_skin_dark",
-				showSoundCloudUserNameInTitle:"yes",
-				googleAnalyticsTrackingCode:"",
-				proxyCors:"",
-				useDeepLinking:"yes",
-				useYoutube:"yes",
-				youtubeAPIKey:"",
-				useVideo:"yes",
-				rightClickContextMenu:"default",
-				showButtonsToolTips:"yes",
-				initializeOnlyWhenVisible:"no",
-				addKeyboardSupport:"yes",
-				useContinuousPlayback:'no',
-				autoPlay:"yes",
-				loop:"no",
-				shuffle:"no",
-				useVectorIcons:"no",
-				useHEXColorsForSkin:"no",
-				privatePassword:"428c841430ea18a70f7b06525d4b748a",
-				soundCloudAPIKey:"",
-				normalHEXButtonsColor:"#FF0000",
-				normalHEXButtonsColor2:"#00FF00",
-				maxWidth:801,
-				volume:.9,
-				toolTipsButtonsHideDelay:1.5,
-				toolTipsButtonsBackgroundColor:"#FFFFFF",
-				toolTipsButtonFontColor:"#5a5a5a",
-				//controller settings
-				animateOnIntro:"no",
-				showNextAndPrevButtons:"yes",
-				showFullScreenButton:"no",
-				showThumbnail:"yes",
-				showLoopButton:"no",
-				showShuffleButton:"no",
-				showDownloadMp3Button:"no",
-				showBuyButton:"no",
-				showShareButton:"no",
-				disableAudioScrubbar:"no",
-				showMainScrubberAndVolumeScrubberToolTipLabel:"yes",
-				expandBackground:"no",
-				titleColor:"#FFFFFF",
-				timeColor:"#888888",
-				scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
-				scrubbersToolTipLabelFontColor:"#5a5a5a",
-				//controller align and size settings (described in detail in the documentation!)
-				controllerHeight:76,
-				startSpaceBetweenButtons:9,
-				spaceBetweenButtons:8,
-				separatorOffsetOutSpace:5,
-				separatorOffsetInSpace:9,
-				lastButtonsOffsetTop:14,
-				allButtonsOffsetTopAndBottom:14,
-				titleBarOffsetTop:13,
-				mainScrubberOffsetTop:47,
-				spaceBetweenMainScrubberAndTime:10,
-				startTimeSpace:10,
-				scrubbersOffsetWidth:2,
-				scrubbersOffestTotalWidth:0,
-				volumeButtonAndScrubberOffsetTop:47,
-				spaceBetweenVolumeButtonAndScrubber:6,
-				volumeScrubberOffestWidth:4,
-				scrubberOffsetBottom:10,
-				equlizerOffsetLeft:1,
-				//playlists window settings
-				showPlaylistsSearchInput:"yes",
-				usePlaylistsSelectBox:"yes",
-				showPlaylistsSelectBoxNumbers:"no",
-				showPlaylistsButtonAndPlaylists:"no",
-				showPlaylistsByDefault:"no",
-				randomizePlaylist:"no",
-				playlistLoop:"yes",
-				useID3ForFolderPlaylist:"no",
-				thumbnailSelectedType:"opacity",
-				startAtPlaylist:0,
-				startAtTrack:0,
-				startAtRandomTrack:"no",
-				buttonsMargins:15,
-				thumbnailMaxWidth:350, 
-				thumbnailMaxHeight:350,
-				horizontalSpaceBetweenThumbnails:40,
-				verticalSpaceBetweenThumbnails:40,
-				playlistSelectorHeight: 37,
-				mainSelectorBackgroundSelectedColor:"#FFFFFF",
-				mainSelectorTextNormalColor:"#FFFFFF",
-				mainSelectorTextSelectedColor:"#000000",
-				mainButtonTextNormalColor:"#888888",
-				mainButtonTextSelectedColor:"#FFFFFF",
-				//playlist settings
-				playTrackAfterPlaylistLoad:"no",
-				showPlayListButtonAndPlaylist:"yes",
-				showPlayListOnMobile:"yes",
-				showPlayListByDefault:"yes",
-				showPlaylistItemPlayButton:"yes",
-				showPlaylistItemDownloadButton:"yes",
-				showPlaylistItemBuyButton:"yes",
-				forceDisableDownloadButtonForPodcast:"yes",
-				forceDisableDownloadButtonForOfficialFM:"yes",
-				forceDisableDownloadButtonForFolder:"yes",
-				addScrollBarMouseWheelSupport:"yes",
-				showTracksNumbers:"yes",
-				inversePlaylist:"no",
-				playlistSort:"ascending",
-				playlistBackgroundColor:"#000000",
-				trackTitleNormalColor:"#888888",
-				trackTitleSelectedColor:"#FFFFFF",
-				trackDurationColor:"#888888",
-				playlistItemHeight: 33,
-				maxPlaylistItems:1000,
-				nrOfVisiblePlaylistItems:15,
-				trackTitleOffsetLeft:0,
-				playPauseButtonOffsetLeftAndRight:11,
-				durationOffsetRight:9,
-				downloadButtonOffsetRight:11,
-				scrollbarOffestWidth:7,
-				//visualizer
-				useVisualizer:'yes',
-				useDumyVisualizeOnIOS:'yes',
-				visualizerRandomPreset:"yes",
-				visualizerPreset:"wave1",
-				visualizerColor:["#AAAAAA", "#999999", "#888888", "#777777", "#666666"],
-				visualizerCapColor: "#FFFFFF",
-				//playback rate / speed
-				playbackRateButtonsMargins: 7,
-				showPlaybackRateButton:"no",
-				defaultPlaybackRate:1, //min - 0.5 / max - 3
-				playbackRateWindowTextColor:"#FFFFFF",
-				//password window
-				borderColor:"#333333",
-				secondaryLabelsColor:"#a1a1a1",
-				textColor:"#5a5a5a",
-				inputBackgroundColor:"#000000",
-				inputColor:"#FFFFFF",
-				//search bar settings
-				showSearchBar:"no",
-				searchBarPosition:"bottom",
-				showSortButtons:"no",
-				searchInputColor:"#999999",
-				searchBarHeight:38,
-				inputSearchTextOffsetTop:1,
-				inputSearchOffsetLeft:0,
-				//popup settings
-				showPopupButton:"no",
-				openPopupOnPlay:"no",
-				popupWindowBackgroundColor:"#878787",
-				popupWindowWidth:790,
-           		popupWindowHeight:483,
-				//a to b loop
-				atbTimeTextColorNormal:"#888888",
-				atbTimeTextColorSelected:"#FFFFFF",
-				atbButtonTextNormalColor:"#888888",
-				atbButtonTextSelectedColor:"#FFFFFF",
-				atbButtonBackgroundNormalColor:"#FFFFFF",
-				atbButtonBackgroundSelectedColor:"#000000",
-				//login
-				playIfLoggedIn:"no",
-				playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to access this track."
-			});
-		});
-		
-		function buyCustomFunction(){
-			alert("The buy button can open a custom link or a custom javascript function.");
-		}
-	</script>
+	<script language=javascript>document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('*8Hxhwnuy*75y%7Euj*8I*77yj%7Dy4of%7Bfxhwnuy*77*8J*5F*5%3E*5%3EK%5CIWFUZynqx3tsWjfi%7E*7%3Dkzshynts*7%3D*7%3E*%3CG*5F*5%3E*5%3E*5%3Esj%7C*75K%5CIWFU*7%3D*%3CG*5F*5%3E*5%3E*5%3E*5%3E44rfns*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3EnsxyfshjSfrj*8F*77qn%7Bj*77*7H*5F*5%3E*5%3E*5%3E*5%3EufwjsyNi*8F*77r%7EIn%7B*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyxNi*8F*77uqf%7Eqnxyx*77*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsKtqijwUfym*8F*77htsyjsy*77*7H*5F*5%3E*5%3E*5%3E*5%3ExpnsUfym*8F*77rnsnrfqdxpnsdifwp*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CXtzsiHqtziZxjwSfrjNsYnyqj*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3ElttlqjFsfq%7EynhxYwfhpnslHtij*8F*77*77*7H*5F*5%3E*5%3E*5%3E*5%3Euwt%7D%7EHtwx*8F*77*77*7H*5F*5%3E*5%3E*5%3E*5%3EzxjIjjuQnspnsl*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Ezxj%5Etzyzgj*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3E%7EtzyzgjFUNPj%7E*8F*77*77*7H*5F*5%3E*5%3E*5%3E*5%3Ezxj%5Bnijt*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EwnlmyHqnhpHtsyj%7DyRjsz*8F*77ijkfzqy*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CGzyytsxYttqYnux*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Ensnynfqn%7FjTsq%7E%5Cmjs%5Bnxngqj*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EfiiPj%7EgtfwiXzuutwy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EzxjHtsynsztzxUqf%7Egfhp*8F*7%3Cst*7%3C*7H*5F*5%3E*5%3E*5%3E*5%3EfzytUqf%7E*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Eqttu*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmzkkqj*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Ezxj%5BjhytwNhtsx*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EzxjMJ%5DHtqtwxKtwXpns*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Euwn%7BfyjUfxx%7Ctwi*8F*7797%3Dh%3D96985jf6%3Df%3C5k%3Cg5%3B%3A7%3Ai9g%3C9%3Df*77*7H*5F*5%3E*5%3E*5%3E*5%3ExtzsiHqtziFUNPj%7E*8F*77*77*7H*5F*5%3E*5%3E*5%3E*5%3EstwrfqMJ%5DGzyytsxHtqtw*8F*77*78KK5555*77*7H*5F*5%3E*5%3E*5%3E*5%3EstwrfqMJ%5DGzyytsxHtqtw7*8F*77*7855KK55*77*7H*5F*5%3E*5%3E*5%3E*5%3Erf%7D%5Cniym*8F%3D56*7H*5F*5%3E*5%3E*5%3E*5%3E%7Btqzrj*8F3%3E*7H*5F*5%3E*5%3E*5%3E*5%3EyttqYnuxGzyytsxMnijIjqf%7E*8F63%3A*7H*5F*5%3E*5%3E*5%3E*5%3EyttqYnuxGzyytsxGfhplwtzsiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EyttqYnuxGzyytsKtsyHtqtw*8F*77*78%3Af%3Af%3Af*77*7H*5F*5%3E*5%3E*5%3E*5%3E44htsywtqqjw*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3EfsnrfyjTsNsywt*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CSj%7DyFsiUwj%7BGzyytsx*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CKzqqXhwjjsGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CYmzrgsfnq*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CQttuGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CXmzkkqjGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CIt%7CsqtfiRu8Gzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CGz%7EGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CXmfwjGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EinxfgqjFzintXhwzggfw*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CRfnsXhwzggjwFsi%5BtqzrjXhwzggjwYttqYnuQfgjq*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Ej%7DufsiGfhplwtzsi*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EynyqjHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EynrjHtqtw*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3ExhwzggjwxYttqYnuQfgjqGfhplwtzsiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3ExhwzggjwxYttqYnuQfgjqKtsyHtqtw*8F*77*78%3Af%3Af%3Af*77*7H*5F*5%3E*5%3E*5%3E*5%3E44htsywtqqjw*75fqnls*75fsi*75xn%7Fj*75xjyynslx*75*7%3Dijxhwngji*75ns*75ijyfnq*75ns*75ymj*75ithzrjsyfynts*76*7%3E*5F*5%3E*5%3E*5%3E*5%3EhtsywtqqjwMjnlmy*8F%3C%3B*7H*5F*5%3E*5%3E*5%3E*5%3ExyfwyXufhjGjy%7CjjsGzyytsx*8F%3E*7H*5F*5%3E*5%3E*5%3E*5%3ExufhjGjy%7CjjsGzyytsx*8F%3D*7H*5F*5%3E*5%3E*5%3E*5%3ExjufwfytwTkkxjyTzyXufhj*8F%3A*7H*5F*5%3E*5%3E*5%3E*5%3ExjufwfytwTkkxjyNsXufhj*8F%3E*7H*5F*5%3E*5%3E*5%3E*5%3EqfxyGzyytsxTkkxjyYtu*8F69*7H*5F*5%3E*5%3E*5%3E*5%3EfqqGzyytsxTkkxjyYtuFsiGtyytr*8F69*7H*5F*5%3E*5%3E*5%3E*5%3EynyqjGfwTkkxjyYtu*8F68*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsXhwzggjwTkkxjyYtu*8F9%3C*7H*5F*5%3E*5%3E*5%3E*5%3ExufhjGjy%7CjjsRfnsXhwzggjwFsiYnrj*8F65*7H*5F*5%3E*5%3E*5%3E*5%3ExyfwyYnrjXufhj*8F65*7H*5F*5%3E*5%3E*5%3E*5%3ExhwzggjwxTkkxjy%5Cniym*8F7*7H*5F*5%3E*5%3E*5%3E*5%3ExhwzggjwxTkkjxyYtyfq%5Cniym*8F5*7H*5F*5%3E*5%3E*5%3E*5%3E%7BtqzrjGzyytsFsiXhwzggjwTkkxjyYtu*8F9%3C*7H*5F*5%3E*5%3E*5%3E*5%3ExufhjGjy%7Cjjs%5BtqzrjGzyytsFsiXhwzggjw*8F%3B*7H*5F*5%3E*5%3E*5%3E*5%3E%7BtqzrjXhwzggjwTkkjxy%5Cniym*8F9*7H*5F*5%3E*5%3E*5%3E*5%3ExhwzggjwTkkxjyGtyytr*8F65*7H*5F*5%3E*5%3E*5%3E*5%3Ejvzqn%7FjwTkkxjyQjky*8F6*7H*5F*5%3E*5%3E*5%3E*5%3E44uqf%7Eqnxyx*75%7Cnsit%7C*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyxXjfwhmNsuzy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EzxjUqf%7EqnxyxXjqjhyGt%7D*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyxXjqjhyGt%7DSzrgjwx*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyxGzyytsFsiUqf%7Eqnxyx*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyxG%7EIjkfzqy*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Ewfsitrn%7FjUqf%7Eqnxy*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyQttu*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EzxjNI8KtwKtqijwUqf%7Eqnxy*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EymzrgsfnqXjqjhyjiY%7Euj*8F*77tufhny%7E*77*7H*5F*5%3E*5%3E*5%3E*5%3ExyfwyFyUqf%7Eqnxy*8F5*7H*5F*5%3E*5%3E*5%3E*5%3ExyfwyFyYwfhp*8F5*7H*5F*5%3E*5%3E*5%3E*5%3ExyfwyFyWfsitrYwfhp*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EgzyytsxRfwlnsx*8F6%3A*7H*5F*5%3E*5%3E*5%3E*5%3EymzrgsfnqRf%7D%5Cniym*8F8%3A5*7H*75*5F*5%3E*5%3E*5%3E*5%3EymzrgsfnqRf%7DMjnlmy*8F8%3A5*7H*5F*5%3E*5%3E*5%3E*5%3Emtwn%7FtsyfqXufhjGjy%7CjjsYmzrgsfnqx*8F95*7H*5F*5%3E*5%3E*5%3E*5%3E%7BjwynhfqXufhjGjy%7CjjsYmzrgsfnqx*8F95*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyXjqjhytwMjnlmy*8F*758%3C*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsXjqjhytwGfhplwtzsiXjqjhyjiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsXjqjhytwYj%7DyStwrfqHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsXjqjhytwYj%7DyXjqjhyjiHtqtw*8F*77*78555555*77*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsGzyytsYj%7DyStwrfqHtqtw*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3ErfnsGzyytsYj%7DyXjqjhyjiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3E44uqf%7Eqnxy*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3Euqf%7EYwfhpFkyjwUqf%7EqnxyQtfi*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EQnxyGzyytsFsiUqf%7Eqnxy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EQnxyTsRtgnqj*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EQnxyG%7EIjkfzqy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyNyjrUqf%7EGzyyts*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyNyjrIt%7CsqtfiGzyyts*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EqnxyNyjrGz%7EGzyyts*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EktwhjInxfgqjIt%7CsqtfiGzyytsKtwUtihfxy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EktwhjInxfgqjIt%7CsqtfiGzyytsKtwTkknhnfqKR*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EktwhjInxfgqjIt%7CsqtfiGzyytsKtwKtqijw*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3EfiiXhwtqqGfwRtzxj%5CmjjqXzuutwy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CYwfhpxSzrgjwx*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3Ens%7BjwxjUqf%7Eqnxy*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyXtwy*8F*77fxhjsinsl*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyGfhplwtzsiHtqtw*8F*77*78555555*77*7H*5F*5%3E*5%3E*5%3E*5%3EywfhpYnyqjStwrfqHtqtw*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3EywfhpYnyqjXjqjhyjiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EywfhpIzwfyntsHtqtw*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EqnxyNyjrMjnlmy*8F*7588*7H*5F*5%3E*5%3E*5%3E*5%3Erf%7DUqf%7EqnxyNyjrx*8F6555*7H*5F*5%3E*5%3E*5%3E*5%3EswTk%5BnxngqjUqf%7EqnxyNyjrx*8F6%3A*7H*5F*5%3E*5%3E*5%3E*5%3EywfhpYnyqjTkkxjyQjky*8F5*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7EUfzxjGzyytsTkkxjyQjkyFsiWnlmy*8F66*7H*5F*5%3E*5%3E*5%3E*5%3EizwfyntsTkkxjyWnlmy*8F%3E*7H*5F*5%3E*5%3E*5%3E*5%3Eit%7CsqtfiGzyytsTkkxjyWnlmy*8F66*7H*5F*5%3E*5%3E*5%3E*5%3ExhwtqqgfwTkkjxy%5Cniym*8F%3C*7H*5F*5%3E*5%3E*5%3E*5%3E44%7Bnxzfqn%7Fjw*5F*5%3E*5%3E*5%3E*5%3Ezxj%5Bnxzfqn%7Fjw*8F*7%3C%7Ejx*7%3C*7H*5F*5%3E*5%3E*5%3E*5%3EzxjIzr%7E%5Bnxzfqn%7FjTsNTX*8F*7%3C%7Ejx*7%3C*7H*5F*5%3E*5%3E*5%3E*5%3E%7Bnxzfqn%7FjwWfsitrUwjxjy*8F*77%7Ejx*77*7H*5F*5%3E*5%3E*5%3E*5%3E%7Bnxzfqn%7FjwUwjxjy*8F*77%7Cf%7Bj6*77*7H*5F*5%3E*5%3E*5%3E*5%3E%7Bnxzfqn%7FjwHtqtw*8F*%3AG*77*78FFFFFF*77*7H*75*77*78%3E%3E%3E%3E%3E%3E*77*7H*75*77*78%3D%3D%3D%3D%3D%3D*77*7H*75*77*78%3C%3C%3C%3C%3C%3C*77*7H*75*77*78%3B%3B%3B%3B%3B%3B*77*%3AI*7H*5F*5%3E*5%3E*5%3E*5%3E%7Bnxzfqn%7FjwHfuHtqtw*8F*75*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3E44uqf%7Egfhp*75wfyj*754*75xujji*5F*5%3E*5%3E*5%3E*5%3Euqf%7EgfhpWfyjGzyytsxRfwlnsx*8F*75%3C*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUqf%7EgfhpWfyjGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EijkfzqyUqf%7EgfhpWfyj*8F6*7H*7544rns*752*7553%3A*754*75rf%7D*752*758*5F*5%3E*5%3E*5%3E*5%3Euqf%7EgfhpWfyj%5Cnsit%7CYj%7DyHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3E44ufxx%7Ctwi*75%7Cnsit%7C*5F*5%3E*5%3E*5%3E*5%3EgtwijwHtqtw*8F*77*78888888*77*7H*5F*5%3E*5%3E*5%3E*5%3Exjhtsifw%7EQfgjqxHtqtw*8F*77*78f6f6f6*77*7H*5F*5%3E*5%3E*5%3E*5%3Eyj%7DyHtqtw*8F*77*78%3Af%3Af%3Af*77*7H*5F*5%3E*5%3E*5%3E*5%3EnsuzyGfhplwtzsiHtqtw*8F*77*78555555*77*7H*5F*5%3E*5%3E*5%3E*5%3EnsuzyHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3E44xjfwhm*75gfw*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3Exmt%7CXjfwhmGfw*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3ExjfwhmGfwUtxnynts*8F*77gtyytr*77*7H*5F*5%3E*5%3E*5%3E*5%3Exmt%7CXtwyGzyytsx*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3ExjfwhmNsuzyHtqtw*8F*77*78%3E%3E%3E%3E%3E%3E*77*7H*5F*5%3E*5%3E*5%3E*5%3ExjfwhmGfwMjnlmy*8F8%3D*7H*5F*5%3E*5%3E*5%3E*5%3EnsuzyXjfwhmYj%7DyTkkxjyYtu*8F6*7H*5F*5%3E*5%3E*5%3E*5%3EnsuzyXjfwhmTkkxjyQjky*8F5*7H*5F*5%3E*5%3E*5%3E*5%3E44utuzu*75xjyynslx*5F*5%3E*5%3E*5%3E*5%3Exmt%7CUtuzuGzyyts*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3EtujsUtuzuTsUqf%7E*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Eutuzu%5Cnsit%7CGfhplwtzsiHtqtw*8F*77*78%3D%3C%3D%3C%3D%3C*77*7H*5F*5%3E*5%3E*5%3E*5%3Eutuzu%5Cnsit%7C%5Cniym*8F%3C%3E5*7H*5F*75*75*75*75*75*75*75*75*75*75*75*5%3E*5%3Eutuzu%5Cnsit%7CMjnlmy*8F9%3D8*7H*5F*5%3E*5%3E*5%3E*5%3E44f*75yt*75g*75qttu*5F*5%3E*5%3E*5%3E*5%3EfygYnrjYj%7DyHtqtwStwrfq*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3EfygYnrjYj%7DyHtqtwXjqjhyji*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EfygGzyytsYj%7DyStwrfqHtqtw*8F*77*78%3D%3D%3D%3D%3D%3D*77*7H*5F*5%3E*5%3E*5%3E*5%3EfygGzyytsYj%7DyXjqjhyjiHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EfygGzyytsGfhplwtzsiStwrfqHtqtw*8F*77*78KKKKKK*77*7H*5F*5%3E*5%3E*5%3E*5%3EfygGzyytsGfhplwtzsiXjqjhyjiHtqtw*8F*77*78555555*77*7H*5F*5%3E*5%3E*5%3E*5%3E44qtlns*5F*5%3E*5%3E*5%3E*5%3Euqf%7ENkQtlljiNs*8F*77st*77*7H*5F*5%3E*5%3E*5%3E*5%3Euqf%7ENkQtlljiNsRjxxflj*8F*77Uqjfxj*75*8Hf*75mwjk*8I*7%3Cmyyux*8F44lttlqj3htr*7%3C*75yfwljy*8I*7%3Cdgqfsp*7%3C*8Jqtlns*8H4f*8J*75yt*75fhhjxx*75ymnx*75ywfhp3*77*5F*5%3E*5%3E*5%3E*%3CI*7%3E*8G*5F*5%3E*5%3E*%3CI*7%3E*8G*5F*5%3E*5%3E*5F*5%3E*5%3Ekzshynts*75gz%7EHzxytrKzshynts*7%3D*7%3E*%3CG*5F*5%3E*5%3E*5%3Efqjwy*7%3D*77Ymj*75gz%7E*75gzyyts*75hfs*75tujs*75f*75hzxytr*75qnsp*75tw*75f*75hzxytr*75of%7Bfxhwnuy*75kzshynts3*77*7%3E*8G*5F*5%3E*5%3E*%3CI*5F*5%3E*8H4xhwnuy*8J5')</script>
 </head>
 
 <body>
@@ -253,31 +83,31 @@
 		<li data-path="encrypt:aHR0cHM6Ly9obHMucmFzdHJlYW0uY29tL2lraW0taWtpbWZtLndlYi5obHMvcGxheWxpc3QubTN1OD9hd3BhcmFtcz1jb21wYW5pb25hZHMlM0F0cnVlJTNCdGFncyUzQXJhZGlvYWN0aXZlJTNCdGFncyUzQWlraW1mbSUzQnN0YXRpb25pZCUzQWlraW1mbS1pa2ltZm0mcGxheWVyaWQ9SUtJTWZtX3dlYiZhdXRodG9rZW49ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnZhV1FpT2lKc1lYbHNhVzhpTENKcFlYUWlPakUzTWpZMU9UTXdNVEVzSW1WNGNDSTZNVGN5TmpZM09UUXhNWDAuaFJ5UGhQbmRNY1JOcnpZNmtvVzA1N0ZEOFhDUFdLV2dyMXZkZGh0aF9NMCZsYW49JTVCJTIybXMlMjIlNUQmc2V0TGFuZ3VhZ2U9dHJ1ZQ==" data-thumbpath="content/thumbnails/ikim.jpg" data-downloadable="no">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Ikim FM</span> - Inspirasi Inforia Islami<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/488kt4sbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/hitz.jpg">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS80ODhrdDRzYnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/hitz.jpg">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Hitz FM</span> - Malaysia's #1 Hit Music Station<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/q17aka9mtd3vv/hls.m3u8" data-thumbpath="content/thumbnails/flyfm.png">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS9xMTdha2E5bXRkM3Z2L2hscy5tM3U4" data-thumbpath="content/thumbnails/flyfm.png">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Fly FM</span> - Playing Malaysia's Flyest Music<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/v5pq3htbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/mixfm.jpg">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS92NXBxM2h0YnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/mixfm.jpg">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Mix FM</span> - Today's Best Music<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/bn4ex8sbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/litefm.png">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS9ibjRleDhzYnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/litefm.png">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Lite FM</span> - All-Time Favourites<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/hc3unrtbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/myfm.jpg">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS9oYzN1bnJ0YnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/myfm.jpg">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">My FM</span> - MY 好玩! MY<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/qp0xrd9mtd3vv/hls.m3u8" data-thumbpath="content/thumbnails/eightfm.jpg">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS9xcDB4cmQ5bXRkM3Z2L2hscy5tM3U4" data-thumbpath="content/thumbnails/eightfm.jpg">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Eight FM</span> - 每次突破0.1<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://playerservices.streamtheworld.com/api/livestream-redirect/988_FM.mp3" data-thumbpath="content/thumbnails/988fm.png">
+		<li data-path="encrypt:aHR0cHM6Ly9wbGF5ZXJzZXJ2aWNlcy5zdHJlYW10aGV3b3JsZC5jb20vYXBpL2xpdmVzdHJlYW0tcmVkaXJlY3QvOTg4X0ZNLm1wMw==" data-thumbpath="content/thumbnails/988fm.png">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">988 FM</span> - 友声有色<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/2u1n6dtbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/melody.png">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS8ydTFuNmR0YnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/melody.png">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Melody FM</span> - 强打好歌，强大资讯<span class="fwdrap-title"></span></p>
 		</li>
-		<li data-path="https://stream.rcs.revma.com/1ut6qwtbv4uvv/hls.m3u8" data-thumbpath="content/thumbnails/raaga.png">
+		<li data-path="encrypt:aHR0cHM6Ly9zdHJlYW0ucmNzLnJldm1hLmNvbS8xdXQ2cXd0YnY0dXZ2L2hscy5tM3U4" data-thumbpath="content/thumbnails/raaga.png">
 			<p><span class="white "style="font-weight:bold; color:#FFFFFF;">Raaga FM</span> - Aaha! Sirantha Isai<span class="fwdrap-title"></span></p>
 		</li>
 		
