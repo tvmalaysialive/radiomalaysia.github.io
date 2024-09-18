@@ -2761,7 +2761,7 @@
 				_s.audioType_str = FWDRAP.VIDEO;
 				
 			}else{
-				if(!_s.isMbl && !FWDRAP.hasHTMLHLS && _s.audioPath.toLowerCase().indexOf(".m3u8") != -1){	
+				if( _s.audioPath.toLowerCase().indexOf(".m3u8") != -1){	
 					_s.audioType_str = FWDRAP.HLS;
 				}else{
 					_s.audioType_str = FWDRAP.AUDIO;
@@ -2773,6 +2773,7 @@
 			}else{
 				if(_s.largePlayButton_do && _s.isFullScreen_bl) _s.largePlayButton_do.show();
 			}
+
 
 			//LOAD atb plugin
 			if(_s._d.playlist_ar[_s.id]['atb'] && !_s.isATBJsLoaded_bl){
@@ -2796,7 +2797,7 @@
 			}
 			
 			//LOAD HLS
-			if(!_s.isMbl && !FWDRAP.hasHTMLHLS && _s.audioPath.indexOf(".m3u8") != -1 && !_s.isHLSJsLoaded_bl && !FWDRAP.isHLSJsLoaded_bl){
+			if(_s.audioPath.indexOf(".m3u8") != -1 && !_s.isHLSJsLoaded_bl && !FWDRAP.isHLSJsLoaded_bl){
 				if(location.protocol.indexOf("file:") != -1){
 					_s.main_do.addChild(_s.info_do);
 					_s.info_do.showText("This browser dosen't allow playing HLS / live streaming videos local, please test online.");
@@ -3614,6 +3615,7 @@
 	FWDRAP.hasHTMLHLS = (function(){
 		var videoTest_el = document.createElement("video");
 		var flag = false;
+		
 		if(videoTest_el.canPlayType){
 			flag = Boolean(videoTest_el.canPlayType('application/vnd.apple.mpegurl') === "probably" || videoTest_el.canPlayType('application/vnd.apple.mpegurl') === "maybe");
 		}
